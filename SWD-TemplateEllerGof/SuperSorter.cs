@@ -16,10 +16,9 @@
         }
 
 
-        public int[] SortArray(int[] array)
+        public void SortArray(int[] array)
         {
-            int[] sortedArray= sorter.ConcreteSorter(array);
-            return sortedArray;
+            sorter.ConcreteSorter(array);
         }
     }
 }
