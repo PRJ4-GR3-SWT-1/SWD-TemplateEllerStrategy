@@ -15,7 +15,7 @@ namespace SWD_TemplateEllerGof
             {
                 int k = IntArrayMin(unsortedArray, i);
                 if (i != k) ;
-                //exchange(unsortedArray, i, k);
+                SuperSorter.Swap(unsortedArray, i, k);
             }
         }
 

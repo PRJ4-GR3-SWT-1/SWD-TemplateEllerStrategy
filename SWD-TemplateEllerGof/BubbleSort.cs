@@ -17,14 +17,9 @@ namespace SWD_TemplateEllerGof
                     if (unsortedArray[i] > unsortedArray[i + 1])
                     {
                         SuperSorter.Swap(unsortedArray, i+1, i);
-                        //t = unsortedArray[i + 1];
-                        //unsortedArray[i + 1] = unsortedArray[i];
-                        //unsortedArray[i] = t;
                     }
                 }
             }
-
-            return unsortedArray;
         }
     }
 }
