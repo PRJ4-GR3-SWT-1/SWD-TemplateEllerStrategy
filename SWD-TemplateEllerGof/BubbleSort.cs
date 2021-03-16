@@ -6,7 +6,7 @@ namespace SWD_TemplateEllerGof
 {
     public class BubbleSort: ISorter
     {
-        public int[] ConcreteSorter(int[] unsortedArray)
+        public void ConcreteSorter(int[] unsortedArray)
         {
             int t;
             for (int p = 0; p <= unsortedArray.Length - 2; p++)

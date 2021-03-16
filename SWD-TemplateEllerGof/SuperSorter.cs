@@ -2,7 +2,7 @@
 {
     public interface ISorter
     {
-        public int[] ConcreteSorter(int[] unsortedArray);
+        public void ConcreteSorter(int[] unsortedArray);
     }
     public class SuperSorter
     {
