@@ -14,8 +14,8 @@ namespace SWD_TemplateEllerGof
             for (i = 0; i < N - 1; i++)
             {
                 int k = IntArrayMin(unsortedArray, i);
-                if (i != k)
-                    exchange(unsortedArray, i, k);
+                if (i != k) ;
+                //exchange(unsortedArray, i, k);
             }
         }
         public static int IntArrayMin(int[] data, int start)

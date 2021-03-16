@@ -1,4 +1,7 @@
-﻿namespace SWD_TemplateEllerGof
+﻿using System;
+using System.Diagnostics;
+
+namespace SWD_TemplateEllerGof
 {
     public interface ISorter
     {
@@ -18,7 +21,20 @@
 
         public void SortArray(int[] array)
         {
+            var stopwatch = new Stopwatch();
+            stopwatch.Start();
             sorter.ConcreteSorter(array);
+            stopwatch.Stop();
+            Console.WriteLine("Det tog kun "+ stopwatch.ElapsedMilliseconds + "ms.");
+        }
+
+        public static void Swap(int[] array, int a, int b)
+        {
+            int temporary;
+
+            temporary = array[a];
+            array[a] = array[b];
+            array[b] = temporary;
         }
     }
 }
