@@ -1,8 +1,8 @@
 ﻿namespace SWD_TemplateEllerGof
 {
-    interface ISorter
+    public interface ISorter
     {
-        public void ConcreteSorter();
+        public int[] ConcreteSorter(int[] unsortedArray);
     }
     public class SuperSorter
     {
@@ -10,7 +10,8 @@
 
         public int[] SortArray(int[] array)
         {
-
+            int[] sortedArray= sorter.ConcreteSorter(array);
+            return sortedArray;
         }
     }
 }
