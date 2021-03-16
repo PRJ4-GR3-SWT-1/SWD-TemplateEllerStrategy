@@ -21,8 +21,6 @@ namespace SWD_TemplateEllerGof
                     }
                 }
             }
-
-            return unsortedArray;
         }
     }
 }

@@ -18,6 +18,7 @@ namespace SWD_TemplateEllerGof
                     exchange(unsortedArray, i, k);
             }
         }
+
         public static int IntArrayMin(int[] data, int start)
         {
             int minPos = start;
