@@ -8,5 +8,12 @@ namespace SWD_TemplateEllerGof
         {
             Console.WriteLine("Hello World!");
         }
+
+       public  int[] ArrayGenerator(int length, int seed)
+       {
+           int[] array = new int[length];
+
+           return array;
+       }
     }
 }
