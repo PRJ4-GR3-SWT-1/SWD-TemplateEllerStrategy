@@ -9,8 +9,14 @@ namespace SWD_TemplateEllerGof
         static void Main(string[] args)
         {
 
-            int[] kurt = ArrayGenerator(1000, 33, 10);
+            int[] kurt = ArrayGenerator(10, 33, 10);
             
+            kurt.ToList().ForEach(i => Console.WriteLine(i.ToString()));
+
+            Console.WriteLine("Nu sorterer vi:");
+            ISorter bs = new BubbleSort();
+            SuperSorter ss= new SuperSorter(bs);
+            ss.SortArray(kurt);
             kurt.ToList().ForEach(i => Console.WriteLine(i.ToString()));
         }
 
