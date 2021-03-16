@@ -25,7 +25,7 @@ namespace SWD_TemplateEllerGof
             stopwatch.Start();
             sorter.ConcreteSorter(array);
             stopwatch.Stop();
-            Console.WriteLine("Det tog kun "+ stopwatch.ElapsedMilliseconds + "ms.");
+            Console.WriteLine(sorter.ToString()+ ". Det tog kun "+ stopwatch.ElapsedMilliseconds + "ms.");
         }
 
         public static void Swap(int[] array, int a, int b)

@@ -8,16 +8,22 @@ namespace SWD_TemplateEllerGof
     {
         static void Main(string[] args)
         {
-
-            int[] kurt = ArrayGenerator(10, 33, 10);
             
-            kurt.ToList().ForEach(i => Console.WriteLine(i.ToString()));
+            int[] kurt = ArrayGenerator(1000, 33, 10);
+            int[] kurt2 = kurt;
+            //kurt.ToList().ForEach(i => Console.WriteLine(i.ToString()));
 
             Console.WriteLine("Nu sorterer vi:");
             ISorter bs = new BubbleSort();
+            
             SuperSorter ss= new SuperSorter(bs);
             ss.SortArray(kurt);
-            kurt.ToList().ForEach(i => Console.WriteLine(i.ToString()));
+            //kurt.ToList().ForEach(i => Console.WriteLine(i.ToString()));
+
+            //int[] kurt2 = ArrayGenerator(1000, 33, 10);
+            ISorter sel = new SelectionSort();
+            ss.sorter = sel;
+            ss.SortArray(kurt2);
         }
 
        public static int[] ArrayGenerator(int length, int max, int seed)
