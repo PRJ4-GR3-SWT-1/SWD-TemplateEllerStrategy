@@ -5,6 +5,13 @@ VisualStudioVersion = 16.0.30907.101
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SWD-TemplateEllerStrategy", "SWD-TemplateEllerGof\SWD-TemplateEllerStrategy.csproj", "{97FDE21D-9704-4CB2-8552-1E31C8BDFA07}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CompressionStocking", "CompressionStocking\CompressionStocking.csproj", "{D98B6B73-33F2-45DE-8C50-6B3CA3F02497}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "stocking main", "stocking main\stocking main.csproj", "{54B7A876-468B-488A-9773-1F63E1DA7351}"
+	ProjectSection(ProjectDependencies) = postProject
+		{D98B6B73-33F2-45DE-8C50-6B3CA3F02497} = {D98B6B73-33F2-45DE-8C50-6B3CA3F02497}
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +22,14 @@ Global
 		{97FDE21D-9704-4CB2-8552-1E31C8BDFA07}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{97FDE21D-9704-4CB2-8552-1E31C8BDFA07}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{97FDE21D-9704-4CB2-8552-1E31C8BDFA07}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D98B6B73-33F2-45DE-8C50-6B3CA3F02497}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D98B6B73-33F2-45DE-8C50-6B3CA3F02497}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D98B6B73-33F2-45DE-8C50-6B3CA3F02497}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D98B6B73-33F2-45DE-8C50-6B3CA3F02497}.Release|Any CPU.Build.0 = Release|Any CPU
+		{54B7A876-468B-488A-9773-1F63E1DA7351}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{54B7A876-468B-488A-9773-1F63E1DA7351}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{54B7A876-468B-488A-9773-1F63E1DA7351}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{54B7A876-468B-488A-9773-1F63E1DA7351}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
